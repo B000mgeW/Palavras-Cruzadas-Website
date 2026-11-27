@@ -1,0 +1,16 @@
+PALAVRAS CRUZADAS - TRANSMISSÃO DE DADOS
+
+Estrutura do projeto
+  index.html        -> estrutura da página (HTML)
+  css/style.css     -> aspeto visual (CSS)
+  js/script.js      -> comportamento: cruzadinha, sons e música (JavaScript)
+  data/dados.json   -> dados: palavras, pistas, conceitos e música (JSON)
+
+Como abrir
+  O JSON é lido com fetch(), por isso NÃO funciona com duplo clique no index.html.
+  Usa um servidor local:
+    - VS Code: instalar a extensão "Live Server" e clicar em "Go Live"; ou
+    - Terminal: python -m http.server 8000  e abrir http://localhost:8000
+  Para pôr online: GitHub Pages ou Netlify.
+
+Música: o ID do vídeo do YouTube e o volume (15) estão em data/dados.json.
