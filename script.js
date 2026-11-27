@@ -188,7 +188,7 @@ try {
 async function iniciar() {
   let D;
   try {
-    const r = await fetch("data/dados.json");
+    const r = await fetch("dados.json");
     if (!r.ok) throw new Error(r.status);
     D = await r.json();
   } catch (e) {
