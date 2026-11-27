@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Transmissão de Dados · Palavras Cruzadas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="logo"><i></i>BomgeCruzadas</div>
+    <ul>
+      <li><a href="#conceitos">Conceitos</a></li>
+      <li><a href="#jogo">Palavras Cruzadas</a></li>
+      <li><button class="ib" id="musica" title="Música de fundo" aria-label="Ligar ou desligar a música">🎵</button></li>
+      <li><button class="ib" id="efeitos" title="Efeitos sonoros" aria-label="Ligar ou desligar os efeitos sonoros">🔔</button></li>
+      <li><button class="ib" id="tema" title="Mudar de tema" aria-label="Alternar tema">◐</button></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="pill">Automação e Computadores</span>
+    <h1>Transmissão de dados, <span class="grad">explicada a jogar.</span></h1>
+    <p>Descobre como a informação viaja entre dispositivos: meios físicos, tipos de sinal e modos de comunicação. Depois, põe à prova o que aprendeste.</p>
+    <div class="cta">
+      <a class="btn p" href="#jogo">Começar o desafio →</a>
+      <a class="btn" href="#conceitos">Ler os conceitos</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>15</b><span>palavras</span></div>
+      <div class="stat"><b>4</b><span>temas</span></div>
+      <div class="stat"><b>13×18</b><span>grelha</span></div>
+    </div>
+  </div>
+</header>
+
+<section id="conceitos">
+  <div class="wrap">
+    <div class="sh">
+      <small>Resumo</small>
+      <h2>O essencial em quatro ideias</h2>
+      <p>Lê estes cartões antes de jogar: todas as respostas da cruzadinha estão aqui.</p>
+    </div>
+    <div class="cards" id="cartoes"></div>
+  </div>
+</section>
+
+<section id="jogo" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sh">
+      <small>Desafio</small>
+      <h2>Palavras cruzadas</h2>
+      <p>Clica numa casa ou numa pista. Escreve sem acentos, hífenes ou espaços (ex.: FIBRAOPTICA). Clica outra vez na mesma casa para mudar de direção. Atenção: as palavras reveladas não contam para a pontuação.</p>
+    </div>
+    <div class="game">
+      <div class="panel">
+        <div class="bar"><span>Progresso: <b id="cnt">0/15</b></span><span>Tempo: <b id="tm">00:00</b></span></div>
+        <div class="now" id="now">Seleciona uma casa para começar.</div>
+        <div class="gc"><div id="cw"></div></div>
+        <div class="acts">
+          <button class="btn p" id="bv">✓ Verificar</button>
+          <button class="btn" id="bh">💡 Dica</button>
+          <button class="btn" id="br">👁 Revelar palavra</button>
+          <button class="btn" id="bc">↻ Recomeçar</button>
+        </div>
+        <div id="res"></div>
+        <div class="prog"><div id="bar"></div></div>
+      </div>
+      <div class="panel cl">
+        <h3>➡️ Horizontais</h3><div id="ch"></div>
+        <h3>⬇️ Verticais</h3><div id="cv"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">Trabalho Feito Por Pedro Pereira🚀</div>
+</footer>
+
+<div id="yt"></div>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
